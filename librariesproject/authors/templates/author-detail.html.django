@@ -1,0 +1,18 @@
+{% extends "librariesproject/templates/base.html.django" %}
+
+{% block content %}
+    <div class = "grid">
+        <div class = "grid-item">
+            <h2>{{author.name}}</h2>
+            <img src="{{ MEDIA_URL }}{{ author.image }}" alt="{{ author.name }}">
+            <h3>Books</h3>
+            {% for book in author.books.all  %}
+                <h4><a class = "grid-item-list" href=" {% url "book-detail" book.pk %}">{{forloop.counter}}. {{book.name}} </a></h4>
+            {% endfor %}
+        <a href="{% url "add-book" %}" class = "button"> Add Book </a>
+        <a href="{% url "edit-author" author.pk %}" class = "button"> Edit Author</a>
+        <a href="{% url "delete-author" author.pk %}" class = "button"> Delete Author</a>
+        <a href="{% url "authors-home" %}" class = "button"> Back to Author List</a>
+        </div>
+    </div>
+{% endblock content %}

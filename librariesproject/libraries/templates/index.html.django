@@ -1,0 +1,13 @@
+{% extends "librariesproject/templates/base.html.django" %}
+
+{% block content %}
+    <h2>List of Libraries</h2>
+    <div class = "grid">
+        {% for library in libraries  %}
+            <div class = "grid-item">
+                <h3><a class = "grid-item-list" href="{% url "detail" library.pk %}">{{ library.name }}</a></h3>
+            </div>
+        {% endfor %}
+    </div>
+    <a href="{% url "add" %}" class = "button"> Add a Library </a>
+{% endblock content %}

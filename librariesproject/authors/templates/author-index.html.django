@@ -1,0 +1,14 @@
+{% extends "librariesproject/templates/base.html.django" %}
+
+{% block content %}
+    <h2>List of Authors</h2>
+    <div class = "grid">
+        {% for author in authors  %}
+            <div class = "grid-item">
+                <a href="{% url "author-detail" author.pk %}"><img src="{{ MEDIA_URL }}{{ author.image }}" alt="{{ author.name }}" class = "thumbnail" ></a>
+                <h3><a class = "grid-item-list" href="{% url "author-detail" author.pk %}">{{ author.name }}</a></h3>
+            </div>
+        {% endfor %}
+        <a href="{% url "add-author" %}" class = "button"> Add Author </a>
+    </div>
+{% endblock content %}

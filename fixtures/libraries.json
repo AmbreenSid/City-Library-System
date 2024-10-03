@@ -1,0 +1,57 @@
+[
+    {
+        "model": "libraries.library",
+        "pk": 1,
+        "fields" : {
+            "name": "Central",
+            "address": "301 Burnhamthorpe Rd W",
+            "year_opened": 1991,
+            // "books":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
+            // "authors":[1,2,3,4,5]
+        }
+    },
+    {
+        "model": "libraries.library",
+        "pk": 2,
+        "fields" : {
+            "name": "Port Credit",
+            "address": "20 Lakeshore Rd E",
+            "year_opened": 1962,
+            // "books": [1,5,9,13,17],
+            // "authors":[1,2,3,4,5]
+        }
+    },
+    {
+        "model": "libraries.library",
+        "pk": 3,
+        "fields" : {
+            "name": "Churchill Meadows",
+            "address": "3801 Thomas Street",
+            "year_opened": 2007,
+            // "books": [4,8,12,16,21],
+            // "authors":[1,2,3,4,5]
+        }
+    },
+    {
+        "model": "libraries.library",
+        "pk": 4,
+        "fields" : {
+            "name": "Erin Meadows",
+            "address": "2800 Erin Centre Boulevard",
+            "year_opened": 2001,
+            // "books": [2,3,6,7,10,11,14,15,18,19],
+            // "authors":[1,2,3,4,5]
+        }
+    },
+    {
+        "model": "libraries.library",
+        "pk": 5,
+        "fields" : {
+            "name": "Meadowvale",
+            "address": "6655 Glen Erin Drive",
+            "year_opened": 1974,
+            // "books":[13,14,15,16,17,18,19,20,21],
+            // "authors":[4,5]
+        }
+    }
+]

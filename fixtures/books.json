@@ -1,0 +1,254 @@
+[
+    {
+        "model": "books.book",
+        "pk": 1,
+        "fields" : {
+            "name": "A Curse So Dark and Lonely",
+            "image": "",
+            "pages": 512,
+            "genres": "fantasy, romance",
+            "author": 1,
+            "available_at": [1,2]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 2,
+        "fields" : {
+            "name": "A heart so fierce and broken",
+            "image": "",
+            "pages": 464,
+            "genre": "fantasy, romance",
+            "author": 1,
+            "available_at": [1,4]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 3,
+        "fields" : {
+            "name": "A vow so bold and deadly",
+            "image": "",
+            "pages": 432,
+            "genre": "fantasy, romance",
+            "author": 1,
+            "available_at": [1,4]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 4,
+        "fields" : {
+            "name": "Letters to the lost",
+            "image": "",
+            "pages": 416,
+            "genre": "fantasy, romance",
+            "author": 1,
+            "available_at": [1,3,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 5,
+        "fields" : {
+            "name": "The twits",
+            "image": "",
+            "pages": 112,
+            "genre": "Fiction, Action-Adventure",
+            "author": 2,
+            "available_at": [1,2]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 6,
+        "fields" : {
+            "name": "Fantastic mr fox",
+            "image": "",
+            "pages": 112,
+            "genre": "Fiction, Action-Adventure",
+            "author": 2,
+            "available_at": [1,4]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 7,
+        "fields" : {
+            "name": "Esio trot",
+            "image": "",
+            "pages": 96,
+            "genre": "Fiction, Action-Adventure",
+            "author": 2,
+            "available_at": [1,4]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 8,
+        "fields" : {
+            "name": "The witches",
+            "image": "",
+            "pages": 208,
+            "genre": "Fiction, Action-Adventure",
+            "author": 2,
+            "available_at": [1,3]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 9,
+        "fields" : {
+            "name": "PJO - the lightning thief",
+            "image": "",
+            "pages": 377,
+            "genre": "Fantasy, Action-Adventure, Mythology",
+            "author": 3,
+            "available_at": [1,2]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 10,
+        "fields" : {
+            "name": "PJO- the sea of monsters",
+            "image": "",
+            "pages": 279,
+            "genre": "Fantasy, Action-Adventure, Mythology",
+            "author": 3,
+            "available_at": [1,4]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 11,
+        "fields" : {
+            "name": "PJO - the titans curse",
+            "image": "",
+            "pages": 213,
+            "genre": "Fantasy, Action-Adventure, Mythology",
+            "author": 3,
+            "available_at": [1,4]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 12,
+        "fields" : {
+            "name": "PJO - the battle of the labyrinth",
+            "image": "",
+            "pages": 361,
+            "genre": "Fantasy, Action-Adventure, Mythology",
+            "author": 3,
+            "available_at": [1,3]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 13,
+        "fields" : {
+            "name": "The cruel Prince",
+            "image": "",
+            "pages": 416,
+            "genre": "Fantasy",
+            "author": 4,
+            "available_at": [1,2,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 14,
+        "fields" : {
+            "name": "The wicked king",
+            "image": "",
+            "pages": 316,
+            "genre": "Fantasy",
+            "author": 4,
+            "available_at": [1,4,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 15,
+        "fields" : {
+            "name": "The queen of nothing",
+            "image": "",
+            "pages": 336,
+            "genre": "Fantasy",
+            "author": 4,
+            "available_at": [1,4,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 16,
+        "fields" : {
+            "name": "The stolen heir",
+            "image": "",
+            "pages": 368,
+            "genre": "Fantasy",
+            "author": 4,
+            "available_at": [1,3,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 17,
+        "fields" : {
+            "name": "The wishing spell",
+            "image": "",
+            "pages": 464,
+            "genre": "Fantasy, Fairytale",
+            "author": 5,
+            "available_at": [1,2,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 18,
+        "fields" : {
+            "name": "The enchantress returns",
+            "image": "",
+            "pages": 544,
+            "genre": "Fantasy, Fairytale",
+            "author": 5,
+            "available_at": [1,4,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 19,
+        "fields" : {
+            "name": "A grimm warning",
+            "image": "",
+            "pages": 496,
+            "genre": "Fantasy, Fairytale",
+            "author": 5,
+            "available_at": [1,4,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 20,
+        "fields" : {
+            "name": "Beyond the kingdoms",
+            "image": "",
+            "pages": 464,
+            "genre": "Fantasy, Fairytale",
+            "author": 5,
+            "available_at": [1,5]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 21,
+        "fields" : {
+            "name": "An author's odyssey",
+            "image": "",
+            "pages": 480,
+            "genre": "Fantasy, Fairytale",
+            "author": 5,
+            "available_at": [1,3,5]
+        }
+    }
+]

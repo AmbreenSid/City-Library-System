@@ -1,0 +1,20 @@
+{% extends "librariesproject/templates/base.html.django" %}
+
+{% block content %}
+    <div class = "grid">
+        <div class = "grid-item">
+            <h2>{{library.name}}</h2>
+            <ul>
+                <li>Address: {{library.address}}</li>
+                <li>Year Opened: {{library.year_opened}}</li>
+                <li>Books available at this location:  
+                {% for book in library.books.all  %}
+                    <h3><a class = "grid-item-list" href=" {% url "book-detail" book.pk %}">{{forloop.counter}}. {{book.name}} by {{book.author}}</a></h3>
+                {% endfor %}
+                </li>
+            </ul>
+            <a href="{% url "edit" library.pk %}" class = "button"> Edit {{library.name}} </a>
+            <a href="{% url "delete" library.pk %}" class = "button"> Delete {{library.name}}</a>
+        </div>
+    </div>
+{% endblock content %}

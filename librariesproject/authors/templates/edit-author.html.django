@@ -1,0 +1,11 @@
+{% extends "librariesproject/templates/base.html.django" %}
+
+{% block content %}
+    <h2>Edit Author</h2>
+    <form method = "post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type = "submit">Save</button>
+        <a href="{% url "authors-home" %}" class = "button"> Cancel </a>
+    </form>
+{% endblock content %}

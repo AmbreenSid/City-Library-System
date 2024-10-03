@@ -1,0 +1,52 @@
+[
+    {
+        "model": "authors.author",
+        "pk": 1,
+        "fields" : {
+            "name": "Brigid Kemmerer",
+            "image": "",
+            "books": [1,2,3,4],
+            "libraries": [1,2,3,4,5]
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 2,
+        "fields" : {
+            "name": "Roald Dahl",
+            "image": "",
+            "books": [5,6,7,8],
+            "libraries": [1,2,3,4]
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 3,
+        "fields" : {
+            "name": "Rick Riordan",
+            "image": "",
+            "books": [9,10,11,12],
+            "libraries": [1,2,3,4]
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 4,
+        "fields" : {
+            "name": "Holly Black",
+            "image": "",
+            "books": [13,14,15,16],
+            "libraries": [1,2,3,4,5]
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 5,
+        "fields" : {
+            "name": "Chris Colfer",
+            "image": "",
+            "books": [17,18,19,20,21],
+            "libraries": [1,2,3,4,5]
+        }
+    }
+]

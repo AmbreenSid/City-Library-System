@@ -1,0 +1,13 @@
+{% extends "librariesproject/templates/base.html.django" %}
+
+{% block content %}
+    <h2>Delete Book</h2>
+    <div class = "warning">
+        Are you sure you want to delete {{book.name}} ?
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        <a href="{% url "books-home" %}" class = "button">Cancel</a>
+        <button type = "submit"> Yes, delete {{book.name}}!</button>
+    </form>
+{% endblock content %}

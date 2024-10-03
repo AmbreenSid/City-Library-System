@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Library System</title>
+    <link rel="stylesheet" href= "{% static 'css/base.css' %}">
+</head>
+<body>
+    <header>
+        <h1>City Library System</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home'%}" {%if request.path == '/'%} class = "current" {% endif %}>Libraries</a></li>
+                {% comment %} <li><a href="{% url "add" %}" {% if request.path == '/add/' %} class = "current" {% endif %}>Add Library</a></li> {% endcomment %}
+                <li><a href="{% url "authors-home" %}" {% if request.path == '/authors/' %} class = "current" {% endif %}>Authors</a></li>
+                {% comment %} <li><a href="{% url "add-author" %}" {% if request.path == '/authors/add/' %} class = "current"{% endif %}>Add Authors</a></li> {% endcomment %}
+                <li><a href="{% url "books-home" %}" {% if request.path == '/books/' %} class = "current" {% endif %}>Books</a></li>
+                {% comment %} <li><a href="{% url "add-book" %}" {% if request.path == '/books/add/' %} class = "current"{% endif %}>Add Books</a></li> {% endcomment %}
+            </ul>
+        </nav>
+    </header>
+    <div class = "container">
+        {% for message in messages  %}
+            <div {% if message.tags %} class = "{{ message.tags }}" {% endif %} > {{ message }}</div>
+        {% endfor %}
+
+        {% block content %}
+        {% endblock content %}    
+    </div>
+
+    <footer>
+        <p>Ambreen Siddiqui - asiddiqui49@seneca.ca - {% now "Y" %}</p>
+    </footer>
+</body>
+</html>
